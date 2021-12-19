@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <section class="form-register">
+        <h4>FORMULARIO</h4>
+        <label for="text">Nombre Completo</label>
+        <input type="text" name="nombre" placeholder="Su nombre de usuario" required pattern="[A-Za-z0-9]{5}">
+        <br>
+        <br>
+        <label for="email">Correo Electronico</label>
+        <input type="email" id="Correo" placeholder="juanitoalcachofa@gmail.com">
+        <br>
+        <br>
+        <label for="tel">Introduce Telefono</label>
+        <input type="tel" name="telefono" required pattern="[0-9]{8}">
+        <br>
+        <br>
+        <label for="date">Fecha Actual:</label>
+        <input type="date" id="date" name="trip-start" value="2021-07-22" min="2021-01-01" max="2021-12-31">
+        <br>
+        <br>
+        <label for="list">Tipo de Usuario</label>
+        <input type="list" id="lista" required>
+        <br>
+        <br>
+        <select name="Departmento">
+        <option selected value="0"> Seleccioonar Departmento </option>
+        <optgroup label="Departmento"> 
+            <option value="1">Cochabamba</option> 
+            <option value="2">Santa Cruz</option> 
+            <option value="3">La Paz</option> 
+            <option value="4">Oruro</option>
+            <option value="5">Sucre</option>
+            <option value="6">Potosi</option>
+            <option value="7">Beni</option>
+            <option value="8">Tarija</option>
+            <option value="">Pando</option>
+        </select>
+        <br>
+        <br>
+        <p>Comentario:</p>
+        <p><textarea name="mensaje" placeholder="Dejanos tu Comentario!"></textarea></p>
+        <p><input type="submit" value="Enviar mensaje"></p>
+        <br>
+        <br>
+        <input class="botons" type="submit" value="Registrar">
+    </section>
+</body>
+</html>
